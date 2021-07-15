@@ -29,5 +29,8 @@
     "./dist",
     "node_modules",
     "./config"
+  ],
+  "typeRoots": [
+    "./src/types/",
   ]
 }

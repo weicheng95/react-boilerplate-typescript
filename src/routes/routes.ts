@@ -1,6 +1,5 @@
 import { IRouteProps } from 'routes/types';
-import HomeIndexPage from 'pages/home';
-import HomeMainPage from 'pages/home/main';
+import LandingPage from 'pages/Landing';
 
 import RouteList from './constants';
 
@@ -8,7 +7,7 @@ const routesMap: IRouteProps[] = [
   {
     id: 1,
     path: RouteList.HOME.path,
-    component: HomeMainPage,
+    component: LandingPage,
     meta: {
       requiresAuth: false,
     },
@@ -16,7 +15,7 @@ const routesMap: IRouteProps[] = [
       {
         id: 1.1,
         path: RouteList.HOME_INDEX.path,
-        component: HomeIndexPage,
+        component: LandingPage,
         exact: true,
         meta: {
           title: RouteList.HOME_INDEX.name,

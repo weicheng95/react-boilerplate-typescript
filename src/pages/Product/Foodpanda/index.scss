@@ -1,0 +1,63 @@
+#loading-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+#foodpanda {
+  #verify-form {
+    background: white;
+    box-shadow: 0 0 5px 2px #e0e0e0;
+    padding: 1rem 1rem 0.5rem 1rem;
+    width: 100%;
+    ion-item.form-field {
+      &::part(native) {
+        padding-inline-start: 0;
+        background: #f3f3f3;
+        border-radius: 8px;
+        border: none;
+        // .item-inner {
+        //   border: none;
+        // }
+      }
+      margin-bottom: 1rem;
+      --highlight-background: #fff;
+      .item-has-focus {
+        border-bottom: none;
+      }
+      ion-label {
+        padding-left: 1.2rem;
+        --color: #727272;
+        padding-top: 0.2rem;
+        padding-bottom: 0.3rem;
+        opacity: 1;
+      }
+      .form-field__value {
+        margin: 0.5rem 0.8rem 1rem;
+      }
+
+      .form-field__icon {
+        position: absolute;
+        right: 5%;
+        top: 40%;
+        cursor: pointer;
+      }
+    }
+    ion-button {
+      margin-top: 2rem;
+      &::part(native) {
+        padding: 1.6rem 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .divider {
+    border-bottom: 1px solid #dcdcdc;
+    margin: 2rem 1.5rem 1rem;
+  }
+}

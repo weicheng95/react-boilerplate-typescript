@@ -1,0 +1,10 @@
+#header-title {
+  font-weight: 500;
+}
+
+.header-md {
+  padding: 0.5rem;
+  &::after {
+    background-image: none;
+  }
+}

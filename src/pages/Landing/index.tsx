@@ -1,12 +1,16 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useEffect, useState } from 'react';
-import { Button } from 'antd';
+import {
+  IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
+} from '@ionic/react';
 
-import { useCurrentUser } from './main';
+import Header from 'components/Header';
+
+import LoginPage from './login';
 
 type IndexProps = {}
 
-const HomeIndexPage = () => {
+const LandingPage = () => {
   const [state, setState] = React.useState({
     foo: 1,
     bar: 2,
@@ -17,21 +21,12 @@ const HomeIndexPage = () => {
     // some code using obj
     setState({ ...state, ...obj }); // this works
   };
-  const { name, age } = useCurrentUser();
+  // const { name, age } = useCurrentUser();
   // someMethod({ foo: 2 });
 
   return (
-    <div>
-      <div className="home-index oya">
-        home index
-        {name}
-        :
-        {age}
-      </div>
-      <Button type="dashed">Submit</Button>
-    </div>
-
+    <LoginPage />
   );
 };
 
-export default HomeIndexPage;
+export default LandingPage;

@@ -1,0 +1,51 @@
+#login-form {
+  ion-item.form-field {
+    &::part(native) {
+      padding-inline-start: 0;
+      background: #f3f3f3;
+      border-radius: 8px;
+      border: none;
+      // .item-inner {
+      //   border: none;
+      // }
+    }
+    margin-bottom: 1rem;
+    --highlight-background: #fff;
+    .item-has-focus {
+      border-bottom: none;
+    }
+    ion-label {
+      padding-left: 1.2rem;
+      --color: #727272 !important;
+      padding-top: 0.2rem;
+      padding-bottom: 0.3rem;
+    }
+    ion-input {
+      .native-input.sc-ion-input-md {
+        padding-inline-start: 1rem;
+        font-size: 18px;
+        padding-bottom: 0.7rem;
+      }
+    }
+  }
+  ion-button {
+    margin-top: 2rem;
+    &::part(native) {
+      padding: 1.6rem 0;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}
+
+#login-header {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  p {
+    font-size: 28px;
+  }
+  .login-logo {
+    // margin-bottom: 1rem;
+  }
+}

@@ -1,14 +1,16 @@
 // eslint-disable-next-line no-use-before-define
 import React from 'react';
 import { render } from 'react-dom';
+import { IonApp } from '@ionic/react';
 
-import Routes from 'routes';
 import reportWebVitals from 'reportWebVitals';
-
 import 'styles/index.scss';
+import Tabs from 'pages/tab';
 
 render(
-  <Routes />,
+  <IonApp id="app">
+    <Tabs />
+  </IonApp>,
   document.getElementById('root'),
 );
 

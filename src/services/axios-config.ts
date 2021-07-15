@@ -4,7 +4,7 @@ import axios from 'axios';
 import { USER_TOKEN } from './constants';
 
 const axiosInstance = axios.create({
-  baseURL: process.env.BASE_URL || 'http://192.168.0.32:3000',
+  baseURL: process.env.REACT_APP_API_URL || 'http://192.168.0.225:8000/api',
 });
 
 // request interceptor
